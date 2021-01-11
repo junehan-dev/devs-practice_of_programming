@@ -50,4 +50,40 @@ common sense guided by experience not on arbitray rules.
 1-04_Function_Macros
 --------------------
 
+- *Macro avoids the overhead of function call*
+   - today it is irrelevant, modern machine runs much fater.
+
+- *Avoid function macros*
+   - C++, inline functions render tunction macros unnecessary.
+   - Java, there are no macros.
+   - C, They cause more problems than they solve.
+
+One of the most problem with function macro is,
+that a paramater that appear more than once in the definition
+might be evaluated more than once.::
+
+   .. code-block:: c
+
+      #define isupper(c) ((c) >= 'A' && (c) <= 'Z')
+      while (isupper(getchar());
+
+   **If the argument in the call includes an expression
+   with side effects, the result is the subtle bug.**
+
+   1. ``c`` is grater than 'A' == True.
+   2. re-evaluate ``c`` and cmp.
+
+Sometimes multiple evaluation causes a performance problem rather than an outright error.::
+
+   .. code-block:: c
+
+      #define ROUND_TO_INT(x) ((int) ((x) + (((x) > 0) ? 0.5 : -0.5)))
+      //...
+      size = ROUNT_TO_INT(sqrt(dx*dx + dy*dy));
+
+- *Parantheses are neccessary.*
+
+   - Even paranthesizing the macro properly does not address the multiple evaluation problem.
+   - If operation is expensive or common enough to be wrapped up. use function.
+
 
