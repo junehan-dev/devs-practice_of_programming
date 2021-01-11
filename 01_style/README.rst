@@ -44,4 +44,10 @@ common sense guided by experience not on arbitray rules.
 1-03_Consistency and idioms
 ---------------------------
 
+- *follow the legacy codes rule when to fix other's.*
+- *structure code with brackets to make people more efficient.*
+
+1-04_Function_Macros
+--------------------
+
 

@@ -1,4 +1,4 @@
-// List all diff outpputs this could produce with various orders of evalutations.
+// List all diff outputs this could produce with various orders of evalutations.
 #include <stdio.h>
 
 int main(void) {
