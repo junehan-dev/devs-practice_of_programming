@@ -22,7 +22,7 @@ Search routine need to know how many elems are in the array.
 One way to tell is to pass length as an arg or place NULL marker at the end of the array
 link to 2-1_arr_seq_search_srccode_.
 
-.. _2-1_arr_seq_search_srccode:: src/2-1_array_sequential_search.c
+.. _2-1_arr_seq_search_srccode: src/2-1_array_sequential_search.c
 
 A paramter that is an array of string declaration::
 
@@ -45,7 +45,7 @@ that parses HTML, which defines textual names for well over a
 hundred individual characters.
 link to 2-1_realistic_size_of_arr_srccode_.
 
-.. _2-1_realistic_size_of_arr_srccode:: src/2-1_realistic_size_of_arr.c
+.. _2-1_realistic_size_of_arr_srccode: src/2-1_realistic_size_of_arr.c
 
 For a larger array like this, it's more efficient to use *binary search.*
 
