@@ -60,6 +60,30 @@ Binary Search Algrorithm
 *``Binary`` DO divide, eliminates for half units of things.*
    *``log2n: Nitems -> 2^times = N``*
 
+link to 2-1_binsearch_.
+
+.. _2-1_binsearch: src/2-1_binsearch.c
+
 2-02_Sorting
 ------------
+
+If data set is known in advance,
+It can be sorted when the program is written and built using compile-time initialization.
+If not, it must be sorted when the program is run.
+
+Quick sort
+^^^^^^^^^^
+
+Quicksort
+   **One of the best all-round sorting algorithms is quicksort.**
+   Was invented in 1960 by C. A. R. Hoare.
+   Quicksort is fine example of how to avoid extra computing.
+   Works by *partitioning an array into little and big elems*::
+
+      1. ``pivot``: pick one elem of array.
+      #. partition the other elements into 2 groups::
+         - *little ones,* that are less than pivot value,
+         - *big ones,* that are greater than or equal to ``pivot`` value.
+
+      #. recursively sort each group.
 
