@@ -86,4 +86,3 @@ Sometimes multiple evaluation causes a performance problem rather than an outrig
    - Even paranthesizing the macro properly does not address the multiple evaluation problem.
    - If operation is expensive or common enough to be wrapped up. use function.
 
-
