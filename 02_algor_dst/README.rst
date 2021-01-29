@@ -11,7 +11,7 @@ Algorithms and Data Structures
 --------------
 
 Array
-   Nothing better than array for stroing static tabular data.
+   Nothing better than array for storing static tabular data.
    Compile-time initialization makes it cheap and easy to construct such arrays.
    (In java, initialization occurs at run-time, but this is an unimportant implementation detail *unless the arrays are large.* )
 
