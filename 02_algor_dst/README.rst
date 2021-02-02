@@ -87,3 +87,24 @@ Quicksort
 
       #. recursively sort each group.
 
+.. code-block:: c
+
+   void quicksort(int arr[], int len);
+   /*
+    * 1. pick one randomly using rand() and store as pivot
+    * 2. arr[0] = pivot; last = 0;
+    * 3. for (i = 1; i < len; i++)
+    *   3-1. if (pivot > arr[i])
+    *       3-1-1. swap(arr, ++last, i)
+    * 4. swap(arr, 0, last); // this point last is lower value index.
+    * 5. quicksort(arr, last); // recurse for lower ~ pivot
+    * 6. quicksort((arr + (last + 1)), len - last - 1) // recur for larger[after pivot] ~ end[len]
+    */
+
+   void swap(int v[], int i, int j);
+   /*
+    * 1. store v[j] to temp
+    * 2. swap each value in address i, j
+    */
+
+
