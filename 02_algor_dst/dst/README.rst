@@ -17,3 +17,22 @@ SRC_FOR_GROWING_ARRAY_
 
 2.7-Lists
 ---------
+
+lists are the most common data structure in typical programs.
+
+List
+   Always exact the size to hold its contents,
+   +(plus), some per-item storage overhead to hold the each pointer.
+   
+      - Can also be rearranged by exchanging few pointers.
+         - Cheaper for using computer resources.
+
+Array
+   Fixed size of bytes array. just like string.
+
+      - Rearrange ususally take many exchanges of byte blocks.
+
+single-linked list
+^^^^^^^^^^^^^^^^^^
+
+
