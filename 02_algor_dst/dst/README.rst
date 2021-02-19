@@ -35,4 +35,26 @@ Array
 single-linked list
 ^^^^^^^^^^^^^^^^^^
 
+Rather than defining an explicit ``List`` type,
+the usual way lists are used in C is to start with a type for the elements.
+And adda poointer that links to the next element
+
+.. code-block:: c
+
+   typedef struct	Nameval Namevl;
+   struct Nameval {
+       char		*name;
+       int		value; 
+       Nameval	*next;
+   };
+
+- s_list_program_
+
+.. _s_list_program: ./src/s_list.c
+
+
+``emalloc esetenv eread ewrite``
+   Declared in ``#include <roken.h>``.
+   Exit-on-failure wrapper function of ``malloc calloc read realloc setenv strdup write`` 
+
 
