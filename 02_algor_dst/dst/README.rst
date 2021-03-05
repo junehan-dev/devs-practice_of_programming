@@ -41,7 +41,7 @@ And adda poointer that links to the next element
 
 .. code-block:: c
 
-   typedef struct	Nameval Namevl;
+   typedef struct	Nameval Nameval;
    struct Nameval {
        char		*name;
        int		value; 
