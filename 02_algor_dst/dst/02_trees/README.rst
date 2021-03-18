@@ -1,11 +1,8 @@
-Data Structure
-==============
-
 2.8 Trees
----------
+=========
 
 Intro
-^^^^^
+-----
 
 A tree is hierarchical data structure that stores a set of items in which each item has value
    - May point to zero or more others.
@@ -15,7 +12,7 @@ A tree is hierarchical data structure that stores a set of items in which each i
 We will illustrate the principles with,
 
 *binary search trees* 
-^^^^^^^^^^^^^^^^^^^^^
+---------------------
 
 **Which have two links at each node.**
    They are easiest to implement, and demonstrate the essential properties of trees.
@@ -26,6 +23,12 @@ Charateristics::
    - The child pointers may be null if the node has fewer than two children.
    - In a binary search tree, the values at the nodes define the tree.
    - all children to the left of a particular node have lower values, all children to the right have higher values.
+
+ft_btree.a
+----------
+
+Struct scheme
+^^^^^^^^^^^^^
 
 .. code-block:: c
 
@@ -38,6 +41,9 @@ Charateristics::
    };
 
 This version of ``insert`` complains about attempts to insert duplicate entries (cmp == 0) in the tree.
+
+library functions
+^^^^^^^^^^^^^^^^^
 
 1. ft_btree_insert.c_: Insert node (bin search)
    Insert routine didn't complain because that would require searching the list, making insertion *O(n)* rather than *O(1).*
@@ -58,9 +64,6 @@ This version of ``insert`` complains about attempts to insert duplicate entries 
    (:This is one reason there are many kinds of trees.)
    For out purpose, we'll just sidestep the ussue and assume that incoming data is sufficiently random to keep the tree balanced enough.
 
-.. _ft_btree_insert.c: srcs/ft_btree_insert.c
-.. _ft_btree_lookup.c: srcs/ft_btree_lookup.c
-
 .. note::
 
    If They are rewritten as iterative algorithms,
@@ -71,3 +74,25 @@ This version of ``insert`` complains about attempts to insert duplicate entries 
    The most direct method is to use ``goto`` statement,
    but while loop is cleaner.
 
+Traverse: List managements
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Techniques for list managements, such as traverser that calls a function at each node.
+
+Concerns::
+
+   - When do we perfomr the operation on this item?
+   - When do we process the rest of the tree?
+
+The answer depends on what the tree is representing:
+   It's storing data in order, such as binary search tree,
+   We visit the left half before the right.
+
+4. ft_btree_inorder_map.c_: in-order traverse map.
+   An in-order traversal executes the operation after visiting the left *subtree* and before visiting the right *subtree*
+   The sequence is used when nodes are to be processed in sorted order.
+
+.. _ft_btree_insert.c: srcs/ft_btree_insert.c
+.. _ft_btree_lookup.c: srcs/ft_btree_lookup.c
+.. _ft_btree_nrlookup.c: srcs/ft_btree_nrlookup.c
+.. _ft_btree_inorder_map.c: srcs/ft_btree_inorder_map.c
