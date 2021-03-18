@@ -1,6 +1,7 @@
 CC		= gcc
 CFLAGS	= -Wall -Wextra -Werror -Iincludes -c
-OBJECTS	= ft_btree_insert.o ft_btree_lookup.o 
+OBJECTS	= ft_btree_insert.o ft_btree_lookup.o \
+			ft_btree_create.o
 NAME	= ft_btree.a
 
 .PHONY: all
@@ -15,6 +16,9 @@ ft_btree_lookup.o:
 
 ft_btree_insert.o:
 	$(CC) $(CFLAGS) srcs/ft_btree_insert.c -o $@
+
+ft_btree_create.o:
+	$(CC) $(CFLAGS) srcs/ft_btree_create.c -o $@
 
 .PHONY: clean
 clean:
