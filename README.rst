@@ -123,3 +123,18 @@ ch09-importance_of_notation_in_computing
    examples shows how we can use notation to simplify programs,
    to guide implementations, and even to
    help us write programs that write programs.
+
+
+end
+^^^
+
+- *"모든 문제에 최고인 언어는 없을 것이다."*
+
+   - low-level언어를 우리가 사용한다면, 더 많은 세부사항을 노출시켜, 특정 상황에 어떤 해답이 적합한지 결정하는 자리에서 더 나은 결정을 할 수 있다.
+   - 고급언어를 다루면서도 이를 low-level 이슈와 연결하는 것은 가치를 매길 수 없는 정도의 것이며, 그러한 통찰없이 탐구하는 것은 즐거울 것이다.
+
+- *"무슨 언어를 사용하건 당신의 최선은 손에 있는 도구로 최고를 수행하는 것이다."*
+
+   - 좋은 프로그래머가 된다면, 부실한 언어와 어설픈 OS를 극복할 수 있을 것이다.
+   - 최고의 환경이 모자란 프로그래머를 개선하는 것은 아니다.
+
