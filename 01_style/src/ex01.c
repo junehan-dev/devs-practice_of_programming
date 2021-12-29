@@ -7,7 +7,7 @@ int isEOF(char ch){
 
     if ((ch == getchar()) == EOF)
         not-eof == FALSE;
-/* name not-eof is not appropriate
+/* name not-eof isn't appropriate
  * because it's function name already points it.
  * if no function name. than is_eof kind of thing will be better.
  */
