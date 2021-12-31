@@ -8,5 +8,6 @@
  */
 
 int     is_smaller(char *dest, char *src) {
-    return (strcmp(dest, src) > 0)
+    return (strcmp((const char *)dest, (const char *)src) < 0)
 }
+
