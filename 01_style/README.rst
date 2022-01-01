@@ -19,25 +19,6 @@ Style
 - style의 세부사항은 local conventions, management 규약 또는 프로그램에 의해 부과되는 것일 수 있다.
    - 세부사항 정의가 부족하다면 넓게 공유된 규약을 따르는 것이 최선이다.
 
-1-02_Expressions and statements
--------------------------------
-
-- *Use the natural form for expressions*::
-
-   ``if (!(block-id < actblks) || !(block-id >= unblocks))``
-   to,
-   ``if ((block-id >= actblks) || (block-id < unblocks))``
-
-- *Parenthesize to resolbe ambiguaty*
-- *Clarity is not brevity.*
-   Often is will be shorter, but also can be longer.
-
-- *Be careful with side effects.*
-   Operator like ``++`` have side effects.
-   ``str[i++] = str[i++] = ' ';//   ?``
-   not only increments, I/O is another source of behind-the-scene action.
-   ``scanf("%d %d", &yr, &profit[yr]);//    ?``
-
 1-03_Consistency and idioms
 ---------------------------
 
