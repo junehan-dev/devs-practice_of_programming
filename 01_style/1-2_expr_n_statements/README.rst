@@ -65,7 +65,7 @@ Use the natural form for expressions
 Parenthesize to resolve ambiguaty
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-비록 praentheses가 필수적이지 않더라도, 처음 봤을 때 연산 순서를 쉽게 구별할 수 있도록 도와준다.
+비록 parentheses가 필수적이지 않더라도, 처음 봤을 때 연산 순서를 쉽게 구별할 수 있도록 도와준다.
 
 - Hard to group:
 
