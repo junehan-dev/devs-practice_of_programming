@@ -19,12 +19,6 @@ Style
 - style의 세부사항은 local conventions, management 규약 또는 프로그램에 의해 부과되는 것일 수 있다.
    - 세부사항 정의가 부족하다면 넓게 공유된 규약을 따르는 것이 최선이다.
 
-1-03_Consistency and idioms
----------------------------
-
-- *follow the legacy codes rule when to fix other's.*
-- *structure code with brackets to make people more efficient.*
-
 1-04_Function_Macros
 --------------------
 
