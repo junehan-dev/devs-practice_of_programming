@@ -132,6 +132,7 @@ Use else-ifs for multi-way decisions
       	printf("Usage Error\n");
 
    - *ifs*\의 연속은 우리에게 정신적인 stack 유지를 요구한다.
+
 - 결정들이 더 나은 버전으로 이어지도록 순서를 변경한다.
 
    .. code-block:: c
@@ -152,4 +153,12 @@ Use else-ifs for multi-way decisions
 
    - 하나의 테스트와 부합하는 action로 연결되고 순차적인 Else를 진행한다.
    - 이 규칙은, 개별 결정을 관련된 행동으로 가능한 가깝게 연결하는 것이다.
-   
+
+Exercise
+^^^^^^^^
+
+1. Exercise-1-7_\: Rewrite these C/C++ excerpts more clearly.
+#. Exercise-1-8_\: Identify the errors in this Java fragment and repair it by rewriting with ad idiomatic loop.
+
+.. _Exercise-1-7: ./srcs/ex1-7-rewrite_to_clear.c
+.. _Exercise-1-8: ./srcs/ex1-8-find_error_and_repair.java
