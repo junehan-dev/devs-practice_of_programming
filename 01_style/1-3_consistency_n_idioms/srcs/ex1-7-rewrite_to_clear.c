@@ -17,16 +17,15 @@ int	origin(void)
 
 // Fixed by me
 
-int stat_tty(void)
+int get_ttys_errno(void)
 {
-	int errno;
+	int	errno;
 
-	if (istty(stdin) && istty(stdout) && istty(stderr)) {
+	errno = 0;
+	if (istty(stdin) && istty(stdout) && istty(stderr))
 		errno = do_next_check(stdin, stdout, stderr);
-		return ((errno == SUCCESS) ? SUCCESS : errno);
-	}
 
-	return (0);
+	return (errno);
 }
 
 float floatnsum(int n)
