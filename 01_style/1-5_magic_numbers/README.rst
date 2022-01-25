@@ -33,6 +33,15 @@ Give names to magic number
 .. _better_histogram: ./srcs/histogram_better.c
 .. _histogram: ./srcs/histogram.c
 
+Define numbers as constants, not macros
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   C프로그래머들은 전통적으로 ``#define``\을 사용하여 상수들을 정의해 왔다.
+   C의 전처리기는 매우 강력한 도구이지만, 매크로들은 프로그램하기에 위험하다.
+   왜냐하면, 그들은 프로그램의 단어적구조를 바꾸기 때문이다.
+
+   언어가 적절히 일을 수행할 수 있도록 두어야 한다.
+   C나 CPP에서 정수의 상수들은 ``enum``\statement을 통해서 정의될 수 있다.
+   
 Exercise
 ^^^^^^^^
 
