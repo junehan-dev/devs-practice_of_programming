@@ -35,16 +35,46 @@ Give names to magic number
 
 Define numbers as constants, not macros
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
    C프로그래머들은 전통적으로 ``#define``\을 사용하여 상수들을 정의해 왔다.
    C의 전처리기는 매우 강력한 도구이지만, 매크로들은 프로그램하기에 위험하다.
    왜냐하면, 그들은 프로그램의 단어적구조를 바꾸기 때문이다.
 
    언어가 적절히 일을 수행할 수 있도록 두어야 한다.
    C나 CPP에서 정수의 상수들은 ``enum``\statement을 통해서 정의될 수 있다.
+
+Use character constants not integers
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
    
+   0라는 값은 다양한 컨텍스에서 사용되고 있고, 컴파일러는 그것을 적절한 타입으로 전환할 것이다.
+   하지만 0이라는 값보다 타입이 명시적이기만 하다면,
+   그것의 역할을 잘 알려줄 수 있는 방법을 제공하는 것이 좋다.
+
+      .. code-block:: c
+
+         // BAD
+         str = 0;
+         name[i] = 0;
+         x = 0;
+
+         // BETTER
+         str = NULL;
+         name[i] = '\0';
+         x = 0.0;
+
+   *명시적인 상수가 다르게 네이밍 되어 있는 것을 사용해 주길 바라며,
+   0은 그 말대로 숫자 0으로서 받아들여지는 경우를 위해 남겨 놓는 것 또한 추천한다.*
+
 Exercise
 ^^^^^^^^
 
-1. Exercise-\:
+1. Exercise-1-10: Rewrite definition to minimize potential errors
 
-.. _Exercise-:
+   .. code-block:: c
+
+      #define FTZMETER	0.3048	// FT_METER
+      #define METERZFT	3.28084	// METER_FT
+      #define MIZFT		5280.0	// MI_FT
+      #define MIZKM		1609344 // MI_KM
+      #define SQMIZSQKM	2.589988	// SQMI_SQKM
+
