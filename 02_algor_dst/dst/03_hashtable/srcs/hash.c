@@ -1,6 +1,6 @@
 #define MULTIPLIER	37
 /* 31, 37 for ascii */
-#define NHASH		1028
+#define NHASH		497
 /* arraySize for Hash values */
 
 unsigned int	hash(char *str)
